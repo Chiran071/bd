@@ -1,3 +1,4 @@
+
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
@@ -10,13 +11,14 @@ window.addEventListener('load', () => {
         cancelButtonText: 'No',
     }).then((result) => {
         if (result.isConfirmed) {
-            document.querySelector('.song').play();
+            document.querySelector('.song1').play();
             animationTimeline();
         } else {
             animationTimeline();
         }
     });
 });
+
 
 
 // animation timeline
